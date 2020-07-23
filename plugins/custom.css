@@ -1,3 +1,7 @@
+
+body{
+    font-family: "Open Sans" , Arial ,  "Noto Sans TC", "Microsoft JhengHei" ,sans-serif;
+}
 .bg{
     background: #9ABF11;
 }
@@ -16,7 +20,7 @@
     margin-left: 15px;
   }
   
-  .resume .func .skills-prog ul li {
+   .skills-prog ul li {
     margin-bottom: 8px;
     display: -webkit-box;
     display: flex;
@@ -26,21 +30,21 @@
             transition-duration: 0.3s;
   }
   
-  .resume .func .skills-prog ul li:hover {
+ .skills-prog ul li:hover {
     color: #fdd835;
   }
   
-  .resume .func .skills-prog ul li:hover .skills-bar .bar {
+ .skills-prog ul li:hover .skills-bar .bar {
     background: #fdd835;
     box-shadow: 0 0 0 1px #fdd835;
   }
   
-  .resume .func .skills-prog ul li span {
+ .skills-prog ul li span {
     display: block;
     width: 120px;
   }
   
-  .resume .func .skills-prog ul li .skills-bar {
+ .skills-prog ul li .skills-bar {
     background: #ffffff;
     height: 2px;
     width: calc(100% - 120px);
@@ -48,7 +52,7 @@
     border-radius: 2px;
   }
   
-  .resume .func .skills-prog ul li .skills-bar .bar {
+   .skills-prog ul li .skills-bar .bar {
     position: absolute;
     top: -1px;
     height: 4px;
@@ -61,12 +65,12 @@
     box-shadow: 0 0 0 1px #fdd835;
   }
   
-  .resume .func .skills-prog ul li span {
+  .skills-prog ul li span {
     display: block;
     width: 120px;
   }
   
-  .resume .func .skills-prog ul li .skills-bar {
+  .skills-prog ul li .skills-bar {
     background: #ffffff;
     height: 2px;
     width: calc(100% - 120px);
@@ -74,7 +78,7 @@
     border-radius: 2px;
   }
   
-  .resume .func .skills-prog ul li .skills-bar .bar {
+  .skills-prog ul li .skills-bar .bar {
     position: absolute;
     top: -1px;
     height: 4px;
@@ -88,13 +92,27 @@
   }
   .top{
     position: relative;
+    background:#9ABF11 ;
   }
   .top::after{
     position: absolute;
     content: "";
     width: 250px;
     height: 250px;
-    background: red;
+    /* background: red; */
+    background-image: url(/imgs/frog.jpg);
     border-radius: 50%;
-    margin: 25px;
+    margin: 20%;
+    z-index: 11;
+}
+.port{
+    width: 350px;
+    height: 300px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.port:hover{
+    transform:scale(1.2,1.2);
 }
